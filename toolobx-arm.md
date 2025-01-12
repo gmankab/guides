@@ -20,3 +20,20 @@ podman exec -it -u root arch bash -c 'echo "%wheel ALL=(ALL:ALL) NOPASSWD: ALL" 
 toolbox enter arch
 ```
 
+### alpine
+
+```shell
+toolbox create --image quay.io/toolbx-images/alpine-toolbox:edge
+```
+
+### postmarket os
+
+```shell
+toolbox create --image quay.io/toolbx-images/alpine-toolbox:edge postmarketos-toolbox
+toolbox enter postmarketos-toolbox
+curl 'https://gitlab.com/adamthiede/postmarketos-docker/-/raw/main/edge/repositories?ref_type=heads&inline=false' | sudo tee /etc/apk/repositories
+sudo wget https://mirror.postmarketos.org/build.postmarketos.org.rsa.pub -O /etc/apk/keys/build.postmarketos.org.rsa.pub
+sudo apk --no-interactive add postmarketos-base postmarketos-ui-console
+sudo apk --no-interactive upgrade -Ua
+```
+

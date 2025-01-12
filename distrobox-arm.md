@@ -19,13 +19,13 @@ distrobox create --pull --image docker.io/menci/archlinuxarm arch-distrobox
 ### alpine
 
 ```shell
-distrobox create --pull --image docker.io/arm64v8/alpine:edge alpine-distrobox
+distrobox create --pull --image quay.io/toolbx-images/alpine-toolbox:edge
 ```
 
 ### postmarketos
 
 ```shell
-distrobox create --pull --image docker.io/arm64v8/alpine:edge postmarketos-distrobox
+distrobox create --pull --image quay.io/toolbx-images/alpine-toolbox:edge postmarketos-distrobox
 distrobox enter postmarketos-distrobox
 curl 'https://gitlab.com/adamthiede/postmarketos-docker/-/raw/main/edge/repositories?ref_type=heads&inline=false' | sudo tee /etc/apk/repositories
 sudo wget https://mirror.postmarketos.org/build.postmarketos.org.rsa.pub -O /etc/apk/keys/build.postmarketos.org.rsa.pub
