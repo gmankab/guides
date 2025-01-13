@@ -32,7 +32,7 @@ cosmic-comp
 ### plasma
 
 ```shell
-toolbox create --distro=fedora plasma-distrobox
+toolbox create --distro=fedora plasma
 toolbox enter plasma
 sudo dnf install -y @kde-desktop
 dbus-run-session -- startplasma-wayland # worked before, shows black screen now
