@@ -25,7 +25,7 @@ phoc -E '/usr/libexec/phosh -U'
 ```shell
 toolbox create --distro=fedora cosmic
 toolbox enter cosmic
-sudo dnf install dbus-daemon cosmic-comp
+sudo dnf install -y cosmic-comp
 cosmic-comp
 ```
 
