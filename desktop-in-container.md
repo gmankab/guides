@@ -16,9 +16,9 @@ sudo dnf install -y @gnome-desktop
 MUTTER_DEBUG_DUMMY_MODE_SPECS=1920x1040 dbus-run-session -- gnome-shell --nested
 ```
 
-### gnome mobile
+### gnome mobile upstream
 
-this is not true gnome mobile that shippend on postmarketos, this gnome version is too similar with regular gnome
+official gnome mobile is almost same as desktop gnome, this is not gnome mobile version from postmarketos
 
 tested host environments:
 - hyprland (work)
