@@ -13,11 +13,7 @@ toolbox create --distro=fedora
 ### arch
 
 ```shell
-toolbox create --image ghcr.io/menci/archlinuxarm arch
-podman start arch
-podman exec -it -u root arch pacman -Syu sudo
-podman exec -it -u root arch bash -c 'echo "%wheel ALL=(ALL:ALL) NOPASSWD: ALL" | tee -a /etc/sudoers'
-toolbox enter arch
+toolbox create --image quay.io/gmanka/arch-arm-toolbox:latest
 ```
 
 ### alpine
@@ -31,7 +27,7 @@ toolbox create --image quay.io/toolbx-images/alpine-toolbox:edge
 ```shell
 toolbox create --image quay.io/toolbx-images/alpine-toolbox:edge postmarketos-toolbox
 toolbox enter postmarketos-toolbox
-curl 'https://gitlab.com/adamthiede/postmarketos-docker/-/raw/main/edge/repositories?ref_type=heads&inline=false' | sudo tee /etc/apk/repositories
+sudo wget https://gitlab.com/adamthiede/postmarketos-docker/-/raw/main/edge/repositories -O /etc/apk/repositories
 sudo wget https://mirror.postmarketos.org/build.postmarketos.org.rsa.pub -O /etc/apk/keys/build.postmarketos.org.rsa.pub
 sudo apk --no-interactive add postmarketos-base postmarketos-ui-console
 sudo apk --no-interactive upgrade -Ua
