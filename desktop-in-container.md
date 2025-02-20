@@ -16,9 +16,9 @@ sudo dnf install -y @gnome-desktop
 MUTTER_DEBUG_DUMMY_MODE_SPECS=1920x1040 dbus-run-session -- gnome-shell --nested
 ```
 
-### gnome mobile upstream
+### gnome mobile
 
-official gnome mobile is almost same as desktop gnome, this is not gnome mobile version from postmarketos
+note thet gnome mobile will look like a desktop version of gnome untill you install [force phone mode](https://github.com/vixalien/force-phone-mode) extension
 
 tested host environments:
 - hyprland (work)
