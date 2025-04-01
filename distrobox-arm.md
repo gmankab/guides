@@ -13,7 +13,7 @@ distrobox create --pull --image registry.fedoraproject.org/fedora-toolbox:latest
 ### arch
 
 ```shell
-toolbox create --image quay.io/gmanka/arch-arm-toolbox:latest
+distrobox create --image quay.io/gmanka/arch-arm-toolbox:latest
 ```
 
 ### alpine
