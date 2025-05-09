@@ -3,7 +3,7 @@
 ![hl](hl.png)
 ![fetch](fetch.png)
 
-tested on xiaomi pad 5
+tested on xiaomi pad 5 with [fedora 42](https://github.com/nik012003/nabu-fedora-builder/blob/main/install.md)
 
 ```sh
 # delete muvm and qemu, because they prevent fex-emu from working correctly
