@@ -1,4 +1,4 @@
-# running steam on arm devive on fedora
+# running steam on fedora arm
 
 ![hl](hl.png)
 ![fetch](fetch.png)
