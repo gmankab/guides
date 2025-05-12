@@ -1,4 +1,4 @@
-# gamescope with steam on fedora
+# add gamescope with steam to gdm on fedora
 
 ![gamescope-steam](gamescope-steam.jpg)
 
@@ -35,4 +35,13 @@ Type=Application
 DesktopNames=gamescope
 ''' | sudo tee /usr/local/share/wayland-sessions/gamescope.desktop
 ```
+
+now you can reboot and you will see a gamescope session in gdm
+
+bugs:
+- turn off system (black screen instead of turn off)
+- restart system (black screen instead of restart)
+- switch to desktop (nothing happens instead of switching to gnome)
+
+if you know how to fix bugs please show me
 
