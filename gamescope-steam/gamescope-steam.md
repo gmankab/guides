@@ -42,13 +42,31 @@ DesktopNames=gamescope
 ''' | sudo tee /usr/local/share/wayland-sessions/gamescope.desktop
 ```
 
+### fix switch to desktop button in power menu
+
+
+```sh
+mkdir /var/home/gmanka/.var/app/com.valvesoftware.Steam/bin
+echo '''
+#!/usr/bin/bash
+flatpak-spawn --host bash -c "pkill -u $USER"
+''' | tee ~/.var/app/com.valvesoftware.Steam/bin/steamos-session-select
+chmod +x ~/.var/app/com.valvesoftware.Steam/bin/steamos-session-select
+
+export flatpak_path=$(flatpak run --command=bash com.valvesoftware.Steam -c 'echo $PATH')
+export newpath=$HOME/.var/app/com.valvesoftware.Steam/bin:$flatpak_path
+sudo flatpak override --system --talk-name=org.freedesktop.Flatpak --env=PATH=$newpath com.valvesoftware.Steam
+```
+
+### done
+
 now you can reboot and you will see a gamescope session in gdm
 
-### bugs
+### bugs in power menu
 
 - turn off system (black screen instead of turn off)
+- suspend system (black screen instead of suspend)
 - restart system (black screen instead of restart)
-- switch to desktop (nothing happens instead of switching to gnome)
 
 if you know how to fix bugs please show me, i will add it to guide
 
