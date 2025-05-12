@@ -44,9 +44,8 @@ DesktopNames=gamescope
 
 ### fix switch to desktop button in power menu
 
-
 ```sh
-mkdir /var/home/gmanka/.var/app/com.valvesoftware.Steam/bin
+mkdir ~/.var/app/com.valvesoftware.Steam/bin
 echo '''
 #!/usr/bin/bash
 flatpak-spawn --host bash -c "pkill -u $USER"
