@@ -4,6 +4,11 @@
 
 this guide explains how to add gamescope to the gdm on fedora to get steamdeck-like experience
 
+### why?
+
+- less input lag compared to gnome, because gamescope allow tearing, useful for online shooters like cs
+- gamepad friendly ui
+
 ### install gamescope
 
 for silverblue:
@@ -17,6 +22,7 @@ for workstation:
 ```sh
 sudo dnf install gamescope
 ```
+
 ### install steam
 
 ```sh
@@ -38,10 +44,15 @@ DesktopNames=gamescope
 
 now you can reboot and you will see a gamescope session in gdm
 
-bugs:
+### bugs
+
 - turn off system (black screen instead of turn off)
 - restart system (black screen instead of restart)
 - switch to desktop (nothing happens instead of switching to gnome)
 
-if you know how to fix bugs please show me
+if you know how to fix bugs please show me, i will add it to guide
+
+### credits
+
+https://discussion.fedoraproject.org/t/notes-from-building-a-steam-appliance-on-silverblue/35267
 
