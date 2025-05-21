@@ -21,8 +21,9 @@ echo '''
 [Service]
 ExecStart=FEXServer -f -p
 ''' | tee ~/.config/systemd/user/fexserver.service
-systemctl start --user fexserver
-systemctl status --user fexserver
+systemctl --user daemon-reload
+systemctl --user start fexserver
+systemctl --user status fexserver
 # ensure service is active
 
 FEXInterpreter /usr/bin/uname -a
