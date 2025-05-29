@@ -3,7 +3,7 @@
 ### disclaimer
 
 - all data on you device will be wiped
-- this work-in-progress
+- this is work-in-progress
 - it may be not possible to update your system
 
 ### download fedora
