@@ -14,23 +14,21 @@ tar -xf Fedora-SDM845-Remix.tar.xz
 cd artifacts
 ```
 
-### download u-boot
+### download uboot
 
-https://git.codelinaro.org/linaro/qcomlt/u-boot/-/releases
+- https://github.com/fedora-remix-mobility/u-boot/releases
+- for oneplus 6 you need uboot-sdm845-oneplus-enchilada.img
+- for oneplus 6t you need uboot-sdm845-oneplus-fajita.img
 
-for oneplus 6 you should download u-boot-enchilada-boot.img
-
-for oneplus 6t you should download u-boot-fajita-boot.img
-
-### flash u-boot
+### flash uboot
 
 ```sh
-fastboot flash boot u-boot-*-boot.img --slot=all
+fastboot flash boot uboot-sdm845-oneplus-*.img --slot=all
 fastboot reboot
 ```
 
-- after that u-boot will be booted
-- in u-boot you should select "enable usb mass storage"
+- after that uboot will be booted
+- in uboot you should select "enable usb mass storage"
 - all partitions on your phone will be mounted on your pc
 
 ### getting partition names
