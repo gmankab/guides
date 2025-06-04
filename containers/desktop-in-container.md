@@ -1,6 +1,6 @@
 # desktop in container
 
-this giude allows you to run different desktop environments in toolbox containers on fedora
+this guide allows you to run different desktop environments in toolbox containers on fedora
 
 ### gnome
 
