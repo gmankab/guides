@@ -23,6 +23,8 @@ cd artifacts
 ### flash uboot
 
 ```sh
+fastboot erase dtbo_a
+fastboot erase dtbo_b
 fastboot flash boot uboot-sdm845-oneplus-*.img --slot=all
 fastboot reboot
 ```
