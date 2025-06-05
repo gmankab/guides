@@ -34,6 +34,7 @@ cd enchilada_22_J.50_210121/extract
 ### patch
 
 ```sh
+curl -LO https://raw.githubusercontent.com/gmankab/guides/refs/heads/main/unbrick/patch.py
 python patch.py
 ```
 
