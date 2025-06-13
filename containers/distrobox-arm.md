@@ -25,11 +25,6 @@ distrobox create --pull --image quay.io/toolbx-images/alpine-toolbox:edge
 ### postmarketos
 
 ```shell
-distrobox create --pull --image quay.io/toolbx-images/alpine-toolbox:edge postmarketos-distrobox
-distrobox enter postmarketos-distrobox
-curl 'https://gitlab.com/adamthiede/postmarketos-docker/-/raw/main/edge/repositories?ref_type=heads&inline=false' | sudo tee /etc/apk/repositories
-sudo wget https://mirror.postmarketos.org/build.postmarketos.org.rsa.pub -O /etc/apk/keys/build.postmarketos.org.rsa.pub
-sudo apk --no-interactive add postmarketos-base postmarketos-ui-console
-sudo apk --no-interactive upgrade -Ua
+toolbox create --image quay.io/gmanka/pmos-toolbox
 ```
 
