@@ -27,6 +27,7 @@ curl -LO https://onepluscommunityserver.com/list/Unbrick_Tools/OnePlus_6/Q/OnePl
 unzip ./OnePlus_6_OxygenOS_10.3.8.zip
 git clone https://github.com/bkerler/oppo_decrypt
 python -m venv .venv
+.venv/bin/pip install -r oppo_decrypt/requirements.txt
 .venv/bin/python oppo_decrypt/opscrypto.py decrypt enchilada_22_J.50_210121/enchilada_22_J.50_210121.ops
 cd enchilada_22_J.50_210121/extract
 ```
