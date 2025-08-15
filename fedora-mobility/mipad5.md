@@ -1,2 +1,1 @@
-see https://github.com/nik012003/nabu-fedora-builder/blob/main/install.md
-
+moved to https://github.com/pocketblue/pocketblue
